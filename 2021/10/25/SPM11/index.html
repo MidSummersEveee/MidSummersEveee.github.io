@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Zhihan&#39;s Sanctum</title>
+  <title>Speech Processing Milestone 1.1 Welcome to Festival | Zhihan&#39;s Sanctum</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -15,11 +15,15 @@
 <link rel="stylesheet" href="/css/highlight.css">
 
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhihan&#39;s Sanctum">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Examining the processing stepsWe begin with creating a utterance object: 12festival&gt; (set! myutt (SayText &quot;The king is dead.&quot;))#&lt;Utterance 0x7fac552e50b0&gt;  Display names of  its utt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Speech Processing Milestone 1.1 Welcome to Festival">
+<meta property="og:url" content="http://example.com/2021/10/25/SPM11/index.html">
 <meta property="og:site_name" content="Zhihan&#39;s Sanctum">
+<meta property="og:description" content="Examining the processing stepsWe begin with creating a utterance object: 12festival&gt; (set! myutt (SayText &quot;The king is dead.&quot;))#&lt;Utterance 0x7fac552e50b0&gt;  Display names of  its utt">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-25T17:03:11.000Z">
+<meta property="article:modified_time" content="2021-10-25T17:03:22.867Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary"><meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -45,17 +49,14 @@
 </header>
 
     <div id="content">
-      
-  
-    <article id="post-SPM11" class="article article-type-post" itemprop="blogPost" itemscope>
+      <article id="post-SPM11" class="article article-type-post" itemprop="blogPost" itemscope>
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h2 class="article-title" itemprop="name">
-      <a href="/2021/10/25/SPM11/">Speech Processing Milestone 1.1 Welcome to Festival</a>
-      
+    <h2 class="article-title" itemprop="headline name">
+      Speech Processing Milestone 1.1 Welcome to Festival
     </h2>
   
 
@@ -173,118 +174,30 @@
   </div>
 </article>
 
-
-
   
-    <article id="post-傅里叶级数与离散傅里叶分析基础" class="article article-type-post" itemprop="blogPost" itemscope>
-  <div class="article-inner">
-    
-      <header class="article-header">
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/2021/10/21/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E7%A6%BB%E6%95%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
         
-  
-    <h2 class="article-title" itemprop="name">
-      <a href="/2021/10/21/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E4%B8%8E%E7%A6%BB%E6%95%A3%E5%82%85%E9%87%8C%E5%8F%B6%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80/">Introduction to Fourier Series &amp; Discrete Fourier Analysis</a>
-      
-    </h2>
-  
-
-
-        <div class="article-meta">
-          <time class="article-date" datetime="2021-10-21T19:11:42.000Z" itemprop="datePublished">2021-10-21</time>
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-        <h1 id="傅里叶级数与离散傅里叶分析基础"><a href="#傅里叶级数与离散傅里叶分析基础" class="headerlink" title="傅里叶级数与离散傅里叶分析基础"></a><strong>傅里叶级数与离散傅里叶分析基础</strong></h1><h2 id="1-Fourier-Series-傅里叶级数"><a href="#1-Fourier-Series-傅里叶级数" class="headerlink" title="1.   Fourier Series 傅里叶级数"></a><strong>1.</strong>   <strong>Fourier Series</strong> <strong>傅里叶级数</strong></h2><p>设$f\left( x \right) $是周期为$2\pi $的函数，则<strong>必定</strong>可将其展开为傅里叶级数</p>
-<p><strong>傅里叶级数 振幅-相位形式：</strong></p>
-<p><strong>Fourier Series, amplitude-phase form</strong><br>$$<br>f\left( x \right) =\frac{A_0}{2}+\sum_{n=1}^{\infty}{A_n\cos \left( 2\pi nx-\varphi _n \right)}<br>$$<br>由两角差公式$\cos \left( \alpha -\beta \right) =\cos \alpha \cos \beta +\sin \alpha \sin \beta $，其中cos项可转换为：</p>
-<p>$$<br>A_n\cos \left( 2\pi nx-\varphi _n \right) =A_ncos\left( \varphi _n \right) \cos \left( 2\pi nx \right) +A_nsin\left( \varphi _n \right) \sin \left( 2\pi nx \right)<br>$$<br>不妨设$A_n\cos \left( \varphi _n \right) $为$a_n$，$A_n\sin \left( \varphi _n \right) $为$b_n$，代回(1)式，有</p>
-<p><strong>傅里叶级数 sin-cos形式：</strong></p>
-<p><strong>Fourier Series, sin-cos form</strong><br>$$<br>f\left( x \right) =\frac{A_0}{2}+\sum_{n=1}^{\infty}{\left( a_n\cos \left( 2\pi nx \right) +b_n\sin \left( 2\pi nx \right) \right)}<br>$$<br> 在$f\left( x \right) $为语音信号的情景中，周期为$P$，而非$2\pi $，因此如果要将$f\left( x \right) $表达为正/余弦函数，显然需要先把period尺度映射到$2\pi $尺度：<br>$$<br>f\left( x \right) =\frac{A_0}{2}+\sum_{n=1}^{\infty}{\left[ a_n\cos \left( \frac{2\pi}{P}nx \right) +b_n\sin \left( \frac{2\pi}{P}nx \right) \right]}<br>$$<br>观察形式可以发现，此时sinusoids的频率实际上<strong>恰为lowest frequency$\frac{1}{P}$的$2\pi $整数倍</strong></p>
-<p>其中n代表区间P上的第n个harmonic的cycle数 (首个harmonic只有1个cycle)</p>
-<p>另外，由于采样频率的限制，<strong>n的取值仅限于从1取到Nyquist Frequency相应的倍数</strong></p>
-<p>傅里叶级数的形式告诉我们，周期函数一定可以分解为正/余弦函数的加权和</p>
-<p>其中我们关心的权重，可由correlation function给出：</p>
-<p>$$<br>a_n=\frac{2}{P}\int_P{f\left( x \right) \cos \left( \frac{2\pi}{P}nx \right) \text{d}x}\quad \left( n=0,1,2,3,\cdots \right) \\<br>b_n=\frac{2}{P}\int_P{f\left( x \right) \sin \left( \frac{2\pi}{P}nx \right) \text{d}x}\quad \left( n=0,1,2,3,\cdots \right)<br>$$<br>$$<br>b_n=\frac{2}{P}\int_P{f\left( x \right) \sin \left( \frac{2\pi}{P}nx \right) \text{d}x}\quad \left( n=0,1,2,3,\cdots \right)<br>$$</p>
-<p>Correlation的大小由信号和各级base wave积分求得，实际上求解是原信号在当前给定n的base wave上的投影大小</p>
-<p>从振幅-相位形式变换到sin-cos形式，我们可以发现：</p>
-<p>$$<br>A_n=\sqrt{A_n^2\cos ^2\left( \varphi \right) +A_n^2\sin ^2\left( \varphi \right)}=\sqrt{a_n^2+b_n^2} \\<br>varphi =\tan ^{-1}\left( \tan \left( \varphi \right) \right) =\tan ^{-1}\left( \frac{A_n\sin \left( \varphi \right)}{A_n\cos \left( \varphi \right)} \right) =\tan ^{-1}\left( \frac{b_n}{a_n} \right)<br>$$<br>在离散情况下有：</p>
-<p>$$<br>X_{\text{k}},,=,,\sum_{\text{n}=0}^{\text{N}-1}{x_n\cdot e^{-\frac{j2\pi kn}{N}}}<br>$$<br>为了便于理解，我们看一下N=2 </p>
-<p>$$<br>X_{\text{k}},,=,,x_1\cdot e^{-\frac{j2\pi k}{2}}+,,x_2\cdot e^{-\frac{j2\pi k\cdot 2}{2}}<br>$$<br>此时采样结果只有两个sample点</p>
-<p>也可以理解成向量内积形式：</p>
-<p>$$<br>X_{\text{k}}=\left( x_0, x_1 \right) ^{\text{T}}\cdot \left( e^{-\frac{j2\pi k\cdot 0}{2}}, e^{-\frac{j2\pi k\cdot 1}{2}} \right)<br>$$<br>其中前者为样本向量，后者为余弦(正弦)波向量</p>
-<p>由欧拉公式：</p>
-<p>$$<br>e^{i\theta}=\cos \left( \theta \right) +i\sin \left( \theta \right)<br>\e^{-i\theta}=\cos \left( \theta \right) -i\sin \left( \theta \right)<br>$$<br>各不同频率sinusoidal的弧度为$-\frac{2\pi kn}{N}$，本例中为0和$-\frac{2\pi k}{N}$</p>
-<p>$$<br>X_{\text{k}},,\begin{matrix}{l} =x_1\left[ \cos \left( -b_0 \right) ,,+,,i\sin \left( -b_1 \right) \right] +x_2\left[ \cos \left( -b_0 \right) ,,+,,i\sin \left( -b_1 \right) \right]\         =,,A_k+B_ki\\end{matrix}<br>$$<br>最终$X_{\text{k}}$对应的base wave的magnitude和phase为：</p>
-<p>$$<br>Mag=\frac{\sqrt{A_k^2+B_k^2}}{N}\\varphi =\tan ^{-1}\frac{B_k}{A_k}<br>$$</p>
-
-      
-    </div>
-    
-    
-    
-  </div>
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemprop="blogPost" itemscope>
-  <div class="article-inner">
-    
-      <header class="article-header">
+          Introduction to Fourier Series &amp; Discrete Fourier Analysis
         
+      </div>
+    </a>
   
-    <h2 class="article-title" itemprop="name">
-      <a href="/2021/10/01/hello-world/">Hello World</a>
-      
-    </h2>
-  
+</nav>
 
 
-        <div class="article-meta">
-          <time class="article-date" datetime="2021-10-01T19:11:42.000Z" itemprop="datePublished">2021-10-01</time>
 
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    
-    
-    
-  </div>
-</article>
 
 
 
   
-
-
-
-
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
@@ -301,6 +214,7 @@
   });
 </script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
     </div>
   </div>
   
